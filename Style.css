@@ -89,21 +89,63 @@ body{
 .Bienvenida{
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
 }
 .Productos{
     height: 50%;
+    display: grid;
+    place-items: center;
 }
 .Reglas{
     height: 50%;
+    display: grid;
+    place-items: center;
 }
 .Reservaciones{
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
 }
 .Direccion{
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
+}
+.Resultados{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+}
+.Entrada_blog{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 .Img{
     height: 100%;
 }
+.Tabla_resultados{
+    border-collapse: collapse; 
+    margin: 25px 0; 
+    font-size: 1em; 
+    min-width: 1%; 
+    box-shadow: 0 0 10px var(--C_texto1); 
+
+}
+.Tabla_resultados tr{
+    background-color: #f0ffff; 
+    color: gray; 
+    text-align: center;
+}
+.Tabla_resultados th {
+    padding: 12px 15px;
+}
+
