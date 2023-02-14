@@ -14,8 +14,10 @@ html{
     --F_texto:  'Ubuntu', sans-serif;
     /* colores */
     --C_background: #93bedF;
-    --C_texto1:     #f0ffff;
-    --C_texto2:     #03375f;
+    --C_texto1    : #f0ffff;
+    --C_texto2    : #03375f;
+    --C_tabla     : #3454d1;
+    --C_sombra    : #efefef;
 }
 h2{
     font-family: var(--F_texto);
@@ -32,9 +34,11 @@ body{
     background-color: var(--C_background);
 }
 .contenedor{
-    border: 2px solid var(--C_texto1);
+    border: 2.5px solid var(--C_texto1);
     background-color: var(--C_texto2);
+
 }
+
 
 /* Titulo */
 
@@ -56,6 +60,12 @@ body{
     flex-direction: row;
     justify-content: center;
     align-content: auto;
+}
+.Derecha{
+    box-shadow: 15px 0px 20px 4px var(--C_sombra);
+}
+.Izquierda{
+    box-shadow: -15px 0px 20px 4px var(--C_sombra);
 }
 .Arriba{
     width: 500px;
@@ -85,12 +95,18 @@ body{
 .Horarios{  
     width: 100%;
     height: 100%;
+    border-radius: 0px 10px 0px 0px;
+    
+}
+.Horarios:hover{
+    box-shadow: inset 0px 0px 20px 4px var(--C_sombra);
 }
 .Bienvenida{
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
+    border-radius: 10px 0px 0px 0px;
 }
 .Productos{
     height: 50%;
@@ -107,12 +123,14 @@ body{
     height: 100%;
     display: grid;
     place-items: center;
+    border-radius: 0px 0px 0px 10px;
 }
 .Direccion{
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
+    border-radius: 0px 0px 10px 0px;
 }
 .Resultados{
     height: 50%;
@@ -130,22 +148,29 @@ body{
 
 }
 .Img{
+    width: 100%;
     height: 100%;
 }
-.Tabla_resultados{
-    border-collapse: collapse; 
-    margin: 25px 0; 
-    font-size: 1em; 
-    min-width: 1%; 
-    box-shadow: 0 0 10px var(--C_texto1); 
 
+.Tabla_resultados{
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse; 
+    font-size: 1.3rem; 
+    table-layout: auto;
 }
-.Tabla_resultados tr{
-    background-color: #f0ffff; 
-    color: gray; 
+.Tabla_resultados th{
+    background-color: var(--C_tabla); 
+    color: var(--C_texto1); 
+    text-align: center;
+    width: 70px;
+}
+.Tabla_resultados tr {
+    color: var(--C_tabla);
+    background-color: var(--C_texto1);
     text-align: center;
 }
-.Tabla_resultados th {
-    padding: 12px 15px;
+.Tabla_resultados tr:hover{
+    background-color: var(--C_tabla); 
+    color: var(--C_texto1); 
 }
-
