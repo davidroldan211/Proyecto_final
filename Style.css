@@ -36,7 +36,6 @@ body{
 .contenedor{
     border: 2.5px solid var(--C_texto1);
     background-color: var(--C_texto2);
-
 }
 
 
@@ -113,6 +112,13 @@ body{
     display: grid;
     place-items: center;
 }
+
+.Productos:hover{
+    background-color: var(--C_sombra);
+    font-size: 20px;
+    color: var(--C_texto2);
+}
+
 .Reglas{
     height: 50%;
     display: grid;
@@ -150,8 +156,22 @@ body{
 .Img{
     width: 100%;
     height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+}
+.Img1{
+    /* position: fixed; */
+    width: auto;
+    height: 100%;
+    object-position:-200px;
 }
 
+.Img2{
+    /* position: fixed; */
+    width: auto;
+    height: 100%;
+    object-position:-100px;
+}
 .Tabla_resultados{
     display: flex;
     justify-content: center;
